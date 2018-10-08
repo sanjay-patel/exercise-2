@@ -1,0 +1,17 @@
+
+
+
+   <RadListView [items]="dataItems" marginTop="20">
+        <ng-template tkListItemTemplate let-item="item">
+            <StackLayout orientation="vertical" (tap)="onGallertItemTap(item.id, item.code)" padding="10 10 10 10">
+                <WrapLayout orientation="horizontal" height="150" [class]="item.code">                    
+                    <GridLayout width="100%" >
+                        <Label [text]="item.code" fontSize="35" color="black" fontWeight="800" textAlignment="center" verticalAlignment="top" paddingTop="20"></Label>
+                        <Label [text]="item.name" fontSize="35" color="black" textAlignment="center" verticalAlignment="bottom" paddingBottom="20"></Label>
+                    </GridLayout>
+                </WrapLayout> 
+            </StackLayout>
+        </ng-template>
+        <ListViewStaggeredLayout tkListViewLayout scrollDirection="Vertical" [spanCount]="spanCount"></ListViewStaggeredLayout>        
+    </RadListView>
+

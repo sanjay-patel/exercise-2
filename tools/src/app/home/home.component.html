@@ -1,0 +1,72 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<ScrollView orientation="vertical">
+    <GridLayout class="page" orientation="vertical" rows="auto, *, *, *, *, *, *">
+        <StackLayout orientation="horizontal" row="0">
+            <my-gel [gelData]="data"></my-gel>
+        </StackLayout>
+        
+        <StackLayout orientation="horizontal" row="1" borderBottomColor="black" borderBottomWidth="5" paddingBottom="20">
+            <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                <Button  row="0" col="0" class="my-button" fontSize="18" textAlignment="center" text="Color" margin="10 10 10 10"></Button >
+                <Button  row="0" col="1" class="my-button active" fontSize="18" textAlignment="center" text="Hue" margin="10 10 10 10"></Button >
+                <Button  row="0" col="2" class="my-button" fontSize="18" textAlignment="center" text="Gel"  margin="10 10 10 10"></Button >
+            </GridLayout>
+        </StackLayout>
+        
+        <StackLayout orientation="horizontal" row="2" borderBottomColor="black" borderBottomWidth="5" paddingBottom="20">
+                <GridLayout orientation="vertical" rows="*, *" columns="*">
+                    <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                        <Image row="0" col="0" src="~/img/fa-reload.png" width="25" height="29" horizontalAlignment="left" margin="10 10 0 10"></Image>
+                        <Label  text="Color Temp" row="0" col="1" fontSize="18" textAlignment="left" margin="10 10 0 10" color="white"></Label >
+                        <Label  text="3200K" row="0" col="2" fontSize="18" textAlignment="right" margin="10 10 0 10" color="white"></Label >
+                    </GridLayout>
+                    <Slider row="1" width="100%" value="10" minValue="0" maxValue="100" height="50" verticalAlignment="stretch" backgroundColor="white"></Slider>
+                </GridLayout>
+        </StackLayout>
+        
+        <StackLayout orientation="horizontal" row="3" borderBottomColor="black" borderBottomWidth="5" paddingBottom="20">
+                <GridLayout orientation="vertical" rows="*, *" columns="*">
+                    <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                        <Image row="0" col="0" src="~/img/fa-reload.png" width="25" height="29" horizontalAlignment="left" margin="10 10 0 10"></Image>
+                        <Label  text="Red" row="0" col="1" fontSize="18" textAlignment="left" margin="10 10 0 10" color="white"></Label >
+                        <Label  text="100" row="0" col="2" fontSize="18" textAlignment="right" margin="10 10 0 10" color="white"></Label >
+                    </GridLayout>
+                    <Slider row="1" width="100%" value="10" minValue="0" maxValue="100" height="50" verticalAlignment="stretch" backgroundColor="white"></Slider>
+                </GridLayout>
+        </StackLayout>
+        
+        <StackLayout orientation="horizontal" row="4" borderBottomColor="black" borderBottomWidth="5" paddingBottom="20">
+                <GridLayout orientation="vertical" rows="*, *" columns="*">
+                    <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                        <Image row="0" col="0" src="~/img/fa-reload.png" width="25" height="29" horizontalAlignment="left" margin="10 10 0 10"></Image>
+                        <Label  text="Green" row="0" col="1" fontSize="18" textAlignment="left" margin="10 10 0 10" color="white"></Label >
+                        <Label  text="100" row="0" col="2" fontSize="18" textAlignment="right" margin="10 10 0 10" color="white"></Label >
+                    </GridLayout>
+                    <Slider row="1" width="100%" value="10" minValue="0" maxValue="100" height="50" verticalAlignment="stretch" backgroundColor="white"></Slider>
+                </GridLayout>
+        </StackLayout>
+        
+        <StackLayout orientation="horizontal" row="5" borderBottomColor="black" borderBottomWidth="5" paddingBottom="20">
+                <GridLayout orientation="vertical" rows="*, *" columns="*">
+                    <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                        <Image row="0" col="0" src="~/img/fa-reload.png" width="25" height="29" horizontalAlignment="left" margin="10 10 0 10"></Image>
+                        <Label  text="Blue" row="0" col="1" fontSize="18" textAlignment="left" margin="10 10 0 10" color="white"></Label >
+                        <Label  text="100" row="0" col="2" fontSize="18" textAlignment="right" margin="10 10 0 10" color="white"></Label >
+                    </GridLayout>
+                    <Slider row="1" width="100%" value="10" minValue="0" maxValue="100" height="50" verticalAlignment="stretch" backgroundColor="white"></Slider>
+                </GridLayout>
+        </StackLayout>
+        
+        <StackLayout orientation="vertical" row="6" borderBottomColor="black" paddingBottom="20">
+            <Label width="100%" text="Fan" fontSize="20" textAlignment="left" padding="10 10 0 10" color="white" ></Label >
+            <GridLayout orientation="vertical" rows="*, *, *" columns="*, *, *">
+                <Button  row="0" col="0" class="my-button active" fontSize="18" textAlignment="center" text="Off" margin="10 10 10 10"></Button >
+                <Button  row="0" col="1" class="my-button" fontSize="18" textAlignment="center" text="Auto" margin="10 10 10 10"></Button >
+                <Button  row="0" col="2" class="my-button" fontSize="18" textAlignment="center" text="Full"  margin="10 10 10 10"></Button >
+            </GridLayout>
+        </StackLayout>
+    </GridLayout>
+</ScrollView>
